@@ -117,8 +117,8 @@ void Ry2dTapNode::initPosition()
     Size thisSize = this->getContentSize();
     
     std::random_device rd;
-    std::uniform_int_distribution<int> widthList(0,size.width - thisSize.width/2);
-    std::uniform_int_distribution<int> heightList(0,size.height - thisSize.height/2);
+    std::uniform_int_distribution<int> widthList(thisSize.width/2, size.width - thisSize.width/2);
+    std::uniform_int_distribution<int> heightList(thisSize.height/2,size.height - thisSize.height/2);
     
     std::mt19937 mt1(rd());
     int randWidth = widthList(mt1);
