@@ -12,7 +12,9 @@
 #include <stdio.h>
 #include "cocos2d.h"
 
-class RyTitleLayer : public cocos2d::Layer
+USING_NS_CC;
+
+class RyTitleLayer : public Layer
 {
 // ----------------------------------------
 // 生成
@@ -27,10 +29,20 @@ public:
     virtual bool init() override;
 
 // ----------------------------------------
-// 準備ができたら入る関数
+// 入退場
 // ----------------------------------------
 public:
     virtual void onEnter() override;
+    virtual void onExit() override;
+    
+// ----------------------------------------
+// タッチイベント
+// ----------------------------------------
+public:
+    bool onTouchBegan(Touch* pTouch, Event* pEvent);
+    void onTouchMoved(Touch* pTouch, Event* pEvent);
+    void onTouchEnded(Touch* pTouch, Event* pEvent);
+    void onTouchCancelled(Touch* pTouch, Event* pEvent);
 };
 
 #endif /* defined(__NeonsTapper__RyTitleLayer__) */

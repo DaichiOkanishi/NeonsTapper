@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include "cocos2d.h"
 
-class RyGameScene : public cocos2d::Node
+class RyGameScene : public cocos2d::Scene
 {
     // ----------------------------------------
     // 生成

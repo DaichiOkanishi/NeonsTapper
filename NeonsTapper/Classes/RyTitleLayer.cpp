@@ -7,8 +7,7 @@
 //
 
 #include "RyTitleLayer.h"
-
-USING_NS_CC;
+#include "RyGameScene.h"
 
 RyTitleLayer* RyTitleLayer::create()
 {
@@ -32,14 +31,59 @@ bool RyTitleLayer::init()
         return false;
     }
     
+    // タッチ判定
+    if (auto listener = EventListenerTouchOneByOne::create())
+    {
+        listener->setSwallowTouches(true);
+        listener->onTouchBegan		= CC_CALLBACK_2(RyTitleLayer::onTouchBegan, this);
+        listener->onTouchMoved		= CC_CALLBACK_2(RyTitleLayer::onTouchMoved, this);
+        listener->onTouchEnded		= CC_CALLBACK_2(RyTitleLayer::onTouchEnded, this);
+        listener->onTouchCancelled	= CC_CALLBACK_2(RyTitleLayer::onTouchCancelled, this);
+        
+        auto dispatcher = this->getEventDispatcher();
+        dispatcher->addEventListenerWithFixedPriority(listener, 1);
+    }
+    
     return true;
 }
 
 void RyTitleLayer::onEnter()
 {
-    
-    if (auto pTitleLabel = LabelTTF::create("NeonsTapper", "SIMPLIFICA Typeface.ttf", 40))
+    if (auto pTitleLabel = LabelTTF::create("NeonsTapper", "SIMPLIFICA.ttf", 40))
     {
+        Size visibleSize = Director::getInstance()->getVisibleSize();
+        pTitleLabel->setPosition(Vec2(visibleSize.width/2, visibleSize.height*0.9f));
+        pTitleLabel->setColor(Color3B::GREEN);
         this->addChild(pTitleLabel);
     }
+}
+
+void RyTitleLayer::onExit()
+{
+    if (auto dispatcher = Director::getInstance()->getEventDispatcher())
+    {
+        dispatcher->removeEventListenersForTarget(this);
+    }
+}
+
+bool RyTitleLayer::onTouchBegan(Touch *pTouch, Event *pEvent)
+{
+    return true;
+}
+
+void RyTitleLayer::onTouchMoved(Touch *pTouch, Event *pEvent)
+{
+}
+
+void RyTitleLayer::onTouchEnded(Touch *pTouch, Event *pEvent)
+{
+    if (RyGameScene* pScene = RyGameScene::create())
+    {
+        Scene* pTrans = TransitionFade::create(2.0f, pScene, Color3B::BLACK);
+        Director::getInstance()->replaceScene(pTrans);
+    }
+}
+
+void RyTitleLayer::onTouchCancelled(Touch *pTouch, Event *pEvent)
+{
 }
