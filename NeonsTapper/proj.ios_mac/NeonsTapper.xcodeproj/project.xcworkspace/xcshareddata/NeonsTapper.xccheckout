@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>14D33D5A-B29D-4C3E-9131-05886BB6FB0A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NeonsTapper</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7C034C22E1A0A34F86A76FBB8FAD1A75AAD965E4</key>
+		<string>https://github.com/DaichiOkanishi/NeonsTapper.git</string>
+		<key>C21FFDADF3F0F19BE0AD566CA42FF2DCB9CCDC7D</key>
+		<string>git://192.168.1.155/Heritage.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NeonsTapper/proj.ios_mac/NeonsTapper.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7C034C22E1A0A34F86A76FBB8FAD1A75AAD965E4</key>
+		<string>../../../..</string>
+		<key>C21FFDADF3F0F19BE0AD566CA42FF2DCB9CCDC7D</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/DaichiOkanishi/NeonsTapper.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7C034C22E1A0A34F86A76FBB8FAD1A75AAD965E4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C21FFDADF3F0F19BE0AD566CA42FF2DCB9CCDC7D</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7C034C22E1A0A34F86A76FBB8FAD1A75AAD965E4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NeonsTapper</string>
+		</dict>
+	</array>
+</dict>
+</plist>
