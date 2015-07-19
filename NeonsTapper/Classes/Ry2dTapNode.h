@@ -16,14 +16,23 @@ USING_NS_CC;
 
 class Ry2dTapNode : public ui::Button
 {
-// ----------------------------------------
-// 初期化
-// ----------------------------------------
 protected:
     /// コンストラクタ
     Ry2dTapNode();
     /// デストラクタ
     virtual ~Ry2dTapNode();
+// ----------------------------------------
+// 生成
+// ----------------------------------------
+public:
+    static Ry2dTapNode* create();
+    
+// ----------------------------------------
+// 初期化
+// ----------------------------------------
+public:
+    virtual bool init() override;
+    void initTexture(const char* filePath);
 };
 
 #endif /* defined(__NeonsTapper__Ry2dTapNode__) */

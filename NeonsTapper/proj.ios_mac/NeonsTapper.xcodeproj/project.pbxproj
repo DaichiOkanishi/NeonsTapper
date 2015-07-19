@@ -22,8 +22,6 @@
 		46880B8219C43A67006E1F66 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7A19C43A67006E1F66 /* HelloWorld.png */; };
 		46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
 		46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
-		46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
-		46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
@@ -68,6 +66,9 @@
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
 		EC82F8821B5BD2C8001ED34B /* Ry2dTapNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC82F8801B5BD2C8001ED34B /* Ry2dTapNode.cpp */; };
+		EC82F8861B5BE200001ED34B /* RyTitleLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC82F8841B5BE200001ED34B /* RyTitleLayer.cpp */; };
+		EC82F8891B5BE2A5001ED34B /* RyTitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC82F8871B5BE2A5001ED34B /* RyTitleScene.cpp */; };
+		EC82F88B1B5BE7E2001ED34B /* tapNode.png in Resources */ = {isa = PBXBuildFile; fileRef = EC82F88A1B5BE7E2001ED34B /* tapNode.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,8 +115,6 @@
 		46880B7A19C43A67006E1F66 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelloWorld.png; sourceTree = "<group>"; };
 		46880B8419C43A87006E1F66 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		46880B8519C43A87006E1F66 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
-		46880B8719C43A87006E1F66 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
@@ -162,6 +161,11 @@
 		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		EC82F8801B5BD2C8001ED34B /* Ry2dTapNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ry2dTapNode.cpp; sourceTree = "<group>"; };
 		EC82F8811B5BD2C8001ED34B /* Ry2dTapNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ry2dTapNode.h; sourceTree = "<group>"; };
+		EC82F8841B5BE200001ED34B /* RyTitleLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RyTitleLayer.cpp; sourceTree = "<group>"; };
+		EC82F8851B5BE200001ED34B /* RyTitleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RyTitleLayer.h; sourceTree = "<group>"; };
+		EC82F8871B5BE2A5001ED34B /* RyTitleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RyTitleScene.cpp; sourceTree = "<group>"; };
+		EC82F8881B5BE2A5001ED34B /* RyTitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RyTitleScene.h; sourceTree = "<group>"; };
+		EC82F88A1B5BE7E2001ED34B /* tapNode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapNode.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +283,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EC82F88A1B5BE7E2001ED34B /* tapNode.png */,
 				521A8EA819F11F5000D177D7 /* fonts */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
 				46880B7619C43A67006E1F66 /* CloseNormal.png */,
@@ -292,6 +297,7 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EC82F8831B5BE1EB001ED34B /* Layer */,
 				EC82F87F1B5BD29B001ED34B /* 2d */,
 				EC82F87E1B5BD1BD001ED34B /* Include */,
 				EC82F87D1B5BD167001ED34B /* Scene */,
@@ -350,8 +356,8 @@
 		EC82F87D1B5BD167001ED34B /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
-				46880B8719C43A87006E1F66 /* HelloWorldScene.h */,
+				EC82F8871B5BE2A5001ED34B /* RyTitleScene.cpp */,
+				EC82F8881B5BE2A5001ED34B /* RyTitleScene.h */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
@@ -372,6 +378,15 @@
 				EC82F8811B5BD2C8001ED34B /* Ry2dTapNode.h */,
 			);
 			name = 2d;
+			sourceTree = "<group>";
+		};
+		EC82F8831B5BE1EB001ED34B /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				EC82F8841B5BE200001ED34B /* RyTitleLayer.cpp */,
+				EC82F8851B5BE200001ED34B /* RyTitleLayer.h */,
+			);
+			name = Layer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -491,6 +506,7 @@
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				3EACC98F19EE6D4300EB3C5E /* res in Resources */,
+				EC82F88B1B5BE7E2001ED34B /* tapNode.png in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
@@ -521,8 +537,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
-				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				EC82F8861B5BE200001ED34B /* RyTitleLayer.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				EC82F8891B5BE2A5001ED34B /* RyTitleScene.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				EC82F8821B5BD2C8001ED34B /* Ry2dTapNode.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
@@ -535,7 +552,6 @@
 			files = (
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
-				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
