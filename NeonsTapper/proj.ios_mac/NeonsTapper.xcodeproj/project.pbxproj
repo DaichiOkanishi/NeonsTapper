@@ -67,6 +67,7 @@
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
+		EC82F8821B5BD2C8001ED34B /* Ry2dTapNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC82F8801B5BD2C8001ED34B /* Ry2dTapNode.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +160,8 @@
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		EC82F8801B5BD2C8001ED34B /* Ry2dTapNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ry2dTapNode.cpp; sourceTree = "<group>"; };
+		EC82F8811B5BD2C8001ED34B /* Ry2dTapNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ry2dTapNode.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +292,7 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EC82F87F1B5BD29B001ED34B /* 2d */,
 				EC82F87E1B5BD1BD001ED34B /* Include */,
 				EC82F87D1B5BD167001ED34B /* Scene */,
 			);
@@ -359,6 +363,15 @@
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 			);
 			name = Include;
+			sourceTree = "<group>";
+		};
+		EC82F87F1B5BD29B001ED34B /* 2d */ = {
+			isa = PBXGroup;
+			children = (
+				EC82F8801B5BD2C8001ED34B /* Ry2dTapNode.cpp */,
+				EC82F8811B5BD2C8001ED34B /* Ry2dTapNode.h */,
+			);
+			name = 2d;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -511,6 +524,7 @@
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				EC82F8821B5BD2C8001ED34B /* Ry2dTapNode.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

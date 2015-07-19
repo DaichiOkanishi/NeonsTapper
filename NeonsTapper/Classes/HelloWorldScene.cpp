@@ -1,4 +1,5 @@
 #include "HelloWorldScene.h"
+#include "Ry2dTapNode.h"
 
 USING_NS_CC;
 
@@ -42,7 +43,7 @@ bool HelloWorld::init()
     
 	closeItem->setPosition(Vec2(origin.x + visibleSize.width - closeItem->getContentSize().width/2 ,
                                 origin.y + closeItem->getContentSize().height/2));
-
+    
     // create menu, it's an autorelease object
     auto menu = Menu::create(closeItem, NULL);
     menu->setPosition(Vec2::ZERO);
@@ -54,7 +55,7 @@ bool HelloWorld::init()
     // add a label shows "Hello World"
     // create and initialize a label
     
-    auto label = Label::createWithTTF("Hello World", "fonts/Marker Felt.ttf", 24);
+    auto label = Label::createWithTTF("Hello World", "fonts/SIMPLIFICA Typeface.ttf", 24);
     
     // position the label on the center of the screen
     label->setPosition(Vec2(origin.x + visibleSize.width/2,
@@ -71,6 +72,11 @@ bool HelloWorld::init()
 
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
+    
+    if (auto pTapNode = Ry2dTapNode::create())
+    {
+        this->addChild(pTapNode, 2);
+    }
     
     return true;
 }
