@@ -69,6 +69,8 @@
 		EC82F8861B5BE200001ED34B /* RyTitleLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC82F8841B5BE200001ED34B /* RyTitleLayer.cpp */; };
 		EC82F8891B5BE2A5001ED34B /* RyTitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC82F8871B5BE2A5001ED34B /* RyTitleScene.cpp */; };
 		EC82F88B1B5BE7E2001ED34B /* tapNode.png in Resources */ = {isa = PBXBuildFile; fileRef = EC82F88A1B5BE7E2001ED34B /* tapNode.png */; };
+		EC82F88F1B5BF2AA001ED34B /* RyGameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC82F88D1B5BF2AA001ED34B /* RyGameScene.cpp */; };
+		EC82F8921B5BF32A001ED34B /* RyGameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC82F8901B5BF329001ED34B /* RyGameLayer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +168,10 @@
 		EC82F8871B5BE2A5001ED34B /* RyTitleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RyTitleScene.cpp; sourceTree = "<group>"; };
 		EC82F8881B5BE2A5001ED34B /* RyTitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RyTitleScene.h; sourceTree = "<group>"; };
 		EC82F88A1B5BE7E2001ED34B /* tapNode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapNode.png; sourceTree = "<group>"; };
+		EC82F88D1B5BF2AA001ED34B /* RyGameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RyGameScene.cpp; sourceTree = "<group>"; };
+		EC82F88E1B5BF2AA001ED34B /* RyGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RyGameScene.h; sourceTree = "<group>"; };
+		EC82F8901B5BF329001ED34B /* RyGameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RyGameLayer.cpp; sourceTree = "<group>"; };
+		EC82F8911B5BF329001ED34B /* RyGameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RyGameLayer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -358,6 +364,8 @@
 			children = (
 				EC82F8871B5BE2A5001ED34B /* RyTitleScene.cpp */,
 				EC82F8881B5BE2A5001ED34B /* RyTitleScene.h */,
+				EC82F88D1B5BF2AA001ED34B /* RyGameScene.cpp */,
+				EC82F88E1B5BF2AA001ED34B /* RyGameScene.h */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
@@ -385,6 +393,8 @@
 			children = (
 				EC82F8841B5BE200001ED34B /* RyTitleLayer.cpp */,
 				EC82F8851B5BE200001ED34B /* RyTitleLayer.h */,
+				EC82F8901B5BF329001ED34B /* RyGameLayer.cpp */,
+				EC82F8911B5BF329001ED34B /* RyGameLayer.h */,
 			);
 			name = Layer;
 			sourceTree = "<group>";
@@ -539,6 +549,8 @@
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				EC82F8861B5BE200001ED34B /* RyTitleLayer.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				EC82F8921B5BF32A001ED34B /* RyGameLayer.cpp in Sources */,
+				EC82F88F1B5BF2AA001ED34B /* RyGameScene.cpp in Sources */,
 				EC82F8891B5BE2A5001ED34B /* RyTitleScene.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				EC82F8821B5BD2C8001ED34B /* Ry2dTapNode.cpp in Sources */,

@@ -7,7 +7,8 @@
 //
 
 #include "RyTitleLayer.h"
-#include "Ry2dTapNode.h"
+
+USING_NS_CC;
 
 RyTitleLayer* RyTitleLayer::create()
 {
@@ -36,10 +37,9 @@ bool RyTitleLayer::init()
 
 void RyTitleLayer::onEnter()
 {
-    if (auto pTapNode = Ry2dTapNode::create())
+    
+    if (auto pTitleLabel = LabelTTF::create("NeonsTapper", "SIMPLIFICA Typeface.ttf", 40))
     {
-        pTapNode->initTexture("");
-        
-        this->addChild(pTapNode);
+        this->addChild(pTitleLabel);
     }
 }
