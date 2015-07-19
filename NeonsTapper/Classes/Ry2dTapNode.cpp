@@ -11,7 +11,7 @@
 
 Ry2dTapNode::Ry2dTapNode()
 : m_elapsedTime(0.0f)
-, m_bAlive(true)
+, m_status(UNEXIST)
 {
     
 }
@@ -132,6 +132,7 @@ void Ry2dTapNode::initPosition()
 void Ry2dTapNode::onEnter()
 {
     Button::onEnter();
+    m_status = SPAWN;
 }
 
 void Ry2dTapNode::onExit()
@@ -143,10 +144,51 @@ void Ry2dTapNode::onExit()
 
 void Ry2dTapNode::update(float delta)
 {
-    m_elapsedTime += delta;
-    
-    if (m_elapsedTime >= 1.0f)
+    switch (m_status)
     {
-        m_bAlive = false;
+        case SPAWN:
+        {
+            m_status = LIVED;
+            break;
+        }
+            
+        case TOUCHED:
+        {
+            m_status = LIVED;
+            break;
+        }
+            
+        case LIVED:
+        {
+            m_elapsedTime += delta;
+            if (m_elapsedTime >= 1.0f)
+            {
+                m_elapsedTime = 0.0f;
+                m_status = MISSED;
+            }
+            break;
+        }
+            
+        case MISSED:
+        {
+            float opacity = this->getOpacity();
+            opacity -= delta;
+            setOpacity(opacity);
+            
+            if (opacity <= 0.0f)
+            {
+                m_status = DEAD;
+            }
+            break;
+        }
+            
+        case DEAD:
+        {
+            // 処理なし。
+            break;
+        }
+        
+        default:
+            break;
     }
 }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2E351AE0-6F30-42FB-B98A-0F8438AD51CE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NeonsTapper2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C21FFDADF3F0F19BE0AD566CA42FF2DCB9CCDC7D</key>
+		<string>git://192.168.1.155/Heritage.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NeonsTapper2/proj.ios_mac/NeonsTapper2.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C21FFDADF3F0F19BE0AD566CA42FF2DCB9CCDC7D</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>git://192.168.1.155/Heritage.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C21FFDADF3F0F19BE0AD566CA42FF2DCB9CCDC7D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C21FFDADF3F0F19BE0AD566CA42FF2DCB9CCDC7D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Labo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

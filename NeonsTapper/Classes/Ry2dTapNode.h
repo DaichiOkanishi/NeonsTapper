@@ -21,6 +21,18 @@ protected:
     Ry2dTapNode();
     /// デストラクタ
     virtual ~Ry2dTapNode();
+    // ----------------------------------------
+    // ステート
+    // ----------------------------------------
+    enum STATUS
+    {
+        UNEXIST = 0,
+        SPAWN,
+        LIVED,
+        TOUCHED,
+        MISSED,
+        DEAD
+    };
     
     // ----------------------------------------
     // 生成
@@ -57,7 +69,7 @@ private:
     // ----------------------------------------
 private:
     float   m_elapsedTime;
-    bool    m_bAlive;
+    STATUS  m_status;
     
     // ----------------------------------------
     // メソッド
@@ -65,7 +77,11 @@ private:
 public:
     inline bool    isAlive()
     {
-        return m_bAlive;
+        if (m_status == DEAD)
+        {
+            return false;
+        }
+        return true;
     }
 };
 
