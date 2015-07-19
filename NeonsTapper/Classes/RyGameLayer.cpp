@@ -26,6 +26,18 @@ RyGameLayer* RyGameLayer::create()
     }
 }
 
+RyGameLayer::RyGameLayer()
+: m_elapsedTime(0.0f)
+, m_respawnTime(2.0f)
+{
+    m_nodeList.clear();
+}
+
+RyGameLayer::~RyGameLayer()
+{
+    
+}
+
 bool RyGameLayer::init()
 {
     if ( Layer::init() == false )
@@ -38,10 +50,41 @@ bool RyGameLayer::init()
 
 void RyGameLayer::onEnter()
 {
-    if (auto pTapNode = Ry2dTapNode::create())
+    this->scheduleUpdate();
+    
+    Layer::onEnter();
+}
+
+void RyGameLayer::onExit()
+{
+    Layer::onExit();
+}
+
+void RyGameLayer::update(float delta)
+{
+    m_elapsedTime += delta;
+    
+    if (m_elapsedTime > m_respawnTime)
     {
-        pTapNode->initTexture("");
+        m_elapsedTime = 0.0f;
         
-        this->addChild(pTapNode);
+        if (auto pTapNode = Ry2dTapNode::create())
+        {
+            pTapNode->initTexture("");
+            this->addChild(pTapNode);
+            m_nodeList.pushBack(pTapNode);
+        }
+    }
+    
+    Vector<Ry2dTapNode *>::iterator it = m_nodeList.begin();
+    while (it != m_nodeList.end())
+    {
+        if ((*it)->isAlive() == false)
+        {
+            this->removeChild(*it);
+            it = m_nodeList.erase(it);
+            continue;
+        }
+        ++it;
     }
 }

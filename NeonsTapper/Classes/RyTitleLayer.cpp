@@ -56,14 +56,13 @@ void RyTitleLayer::onEnter()
         pTitleLabel->setColor(Color3B::GREEN);
         this->addChild(pTitleLabel);
     }
+    
+    Layer::onEnter();
 }
 
 void RyTitleLayer::onExit()
 {
-    if (auto dispatcher = Director::getInstance()->getEventDispatcher())
-    {
-        dispatcher->removeEventListenersForTarget(this);
-    }
+    Layer::onExit();
 }
 
 bool RyTitleLayer::onTouchBegan(Touch *pTouch, Event *pEvent)
@@ -77,10 +76,15 @@ void RyTitleLayer::onTouchMoved(Touch *pTouch, Event *pEvent)
 
 void RyTitleLayer::onTouchEnded(Touch *pTouch, Event *pEvent)
 {
-    if (RyGameScene* pScene = RyGameScene::create())
+    if (Scene* pScene = RyGameScene::createScene())
     {
         Scene* pTrans = TransitionFade::create(2.0f, pScene, Color3B::BLACK);
         Director::getInstance()->replaceScene(pTrans);
+        
+        if (auto dispatcher = Director::getInstance()->getEventDispatcher())
+        {
+            dispatcher->removeAllEventListeners();
+        }
     }
 }
 
