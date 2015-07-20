@@ -49,7 +49,7 @@ bool RyTitleLayer::init()
 
 void RyTitleLayer::onEnter()
 {
-    if (auto pTitleLabel = LabelTTF::create("NeonsTapper", "SIMPLIFICA.ttf", 40))
+    if (auto pTitleLabel = LabelTTF::create("Neons Tapper", "fonts/lovelolinelight.ttf", 60))
     {
         Size visibleSize = Director::getInstance()->getVisibleSize();
         pTitleLabel->setPosition(Vec2(visibleSize.width/2, visibleSize.height*0.9f));

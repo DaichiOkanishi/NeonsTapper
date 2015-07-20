@@ -13,6 +13,7 @@
 #include "ui/CocosGUI.h"
 
 USING_NS_CC;
+using namespace ui;
 
 class Ry2dTapNode : public ui::Button
 {
@@ -28,8 +29,9 @@ protected:
     {
         UNEXIST = 0,
         SPAWN,
-        LIVED,
+        APPEAR,
         TOUCHED,
+        LIVED,
         MISSED,
         DEAD
     };
@@ -47,9 +49,12 @@ private:
     virtual bool init() override;
     
 public:
+    void initsAll();
     void initTexture(const char* filePath);
     void initColor();
     void initPosition();
+    void initFrame();
+    void initLabel();
     
     // ----------------------------------------
     // 入退場
@@ -68,9 +73,10 @@ private:
     // プロパティ
     // ----------------------------------------
 private:
-    float   m_elapsedTime;
-    STATUS  m_status;
-    
+    float       m_elapsedTime;
+    STATUS      m_status;
+    ImageView*  m_imgFrame;
+    Label*      m_label;
     // ----------------------------------------
     // メソッド
     // ----------------------------------------

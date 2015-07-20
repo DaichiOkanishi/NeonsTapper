@@ -12,6 +12,8 @@
 Ry2dTapNode::Ry2dTapNode()
 : m_elapsedTime(0.0f)
 , m_status(UNEXIST)
+, m_imgFrame(nullptr)
+, m_label(nullptr)
 {
     
 }
@@ -39,14 +41,19 @@ bool Ry2dTapNode::init()
     {
         return false;
     }
-
-    setScale(0.5f);
-    initColor();
-    initPosition();
     
     this->scheduleUpdate();
     
     return true;
+}
+
+void Ry2dTapNode::initsAll()
+{
+    initTexture("");
+    initColor();
+    initPosition();
+    initFrame();
+    initLabel();
 }
 
 void Ry2dTapNode::initTexture(const char *filePath)
@@ -115,10 +122,11 @@ void Ry2dTapNode::initPosition()
 {
     Size size = Director::getInstance()->getVisibleSize();
     Size thisSize = this->getContentSize();
+    float scale = this->getScale();
     
     std::random_device rd;
-    std::uniform_int_distribution<int> widthList(thisSize.width/2, size.width - thisSize.width/2);
-    std::uniform_int_distribution<int> heightList(thisSize.height/2,size.height - thisSize.height/2);
+    std::uniform_int_distribution<int> widthList((thisSize.width*scale)/2, size.width - (thisSize.width*scale)/2);
+    std::uniform_int_distribution<int> heightList((thisSize.height*scale)/2 + 50, size.height - (thisSize.height*scale)/2);
     
     std::mt19937 mt1(rd());
     int randWidth = widthList(mt1);
@@ -126,7 +134,35 @@ void Ry2dTapNode::initPosition()
     std::mt19937 mt2(rd());
     int randHeight = heightList(mt2);
     
+    this->setAnchorPoint(Vec2(0.5f, 0.5f));
     this->setPosition(Vec2(randWidth, randHeight));
+}
+
+void Ry2dTapNode::initFrame()
+{
+    m_imgFrame = ImageView::create();
+    m_imgFrame->loadTexture("circleFrame.png");
+    m_imgFrame->setScale(0.0f);
+    
+    Size thisSize = this->getContentSize();
+    float scale = this->getScale();
+    m_imgFrame->setPosition(Vec2((thisSize.width*scale)/2, (thisSize.height*scale)/2));
+    
+    this->addChild(m_imgFrame);
+}
+
+void Ry2dTapNode::initLabel()
+{
+    m_label = Label::create();
+    m_label->setSystemFontName("fonts/lovelolinelight.ttf");
+    m_label->setSystemFontSize(60);
+    m_label->setColor(Color3B::RED);
+    
+    Size thisSize = this->getContentSize();
+    float scale = this->getScale();
+    m_label->setPosition(Vec2((thisSize.width*scale)/2, (thisSize.height*scale)/2));
+    
+    this->addChild(m_label);
 }
 
 void Ry2dTapNode::onEnter()
@@ -148,7 +184,39 @@ void Ry2dTapNode::update(float delta)
     {
         case SPAWN:
         {
-            m_status = LIVED;
+            setScale(0.5f);
+            setOpacity(0);
+            runAction(CCFadeIn::create(0.5f));
+            
+            m_imgFrame->setScale(2.0f);
+            m_imgFrame->setOpacity(0);
+            
+            m_imgFrame->runAction(CCSpawn::create(CCFadeIn::create(0.5f), CCScaleTo::create(1.5f, 0.0f), NULL));
+            
+            m_status = APPEAR;
+            break;
+        }
+            
+        case APPEAR:
+        {
+            m_elapsedTime += delta;
+            if (m_elapsedTime >= 0.5f)
+            {
+                m_elapsedTime = 0.0f;
+                m_status = LIVED;
+            }
+            break;
+        }
+            
+        case LIVED:
+        {
+            float scale = m_imgFrame->getScale();
+            
+            if (scale <= 0.5f)
+            {
+                m_label->setString("MISS");
+                m_status = MISSED;
+            }
             break;
         }
             
@@ -158,21 +226,15 @@ void Ry2dTapNode::update(float delta)
             break;
         }
             
-        case LIVED:
-        {
-            m_elapsedTime += delta;
-            if (m_elapsedTime >= 1.0f)
-            {
-                m_elapsedTime = 0.0f;
-                m_status = MISSED;
-            }
-            break;
-        }
-            
         case MISSED:
         {
+            m_elapsedTime += delta;
             float opacity = this->getOpacity();
-            opacity -= delta;
+            opacity -= m_elapsedTime;
+            if (opacity <= 0)
+            {
+                opacity = 0;
+            }
             setOpacity(opacity);
             
             if (opacity <= 0.0f)

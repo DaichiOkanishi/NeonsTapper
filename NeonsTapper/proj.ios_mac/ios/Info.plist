@@ -58,7 +58,10 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIAppFonts</key>
-	<array/>
+	<array>
+		<string>fonts/lovelolinelight.ttf</string>
+		<string>fonts/SIMPLIFICA.ttf</string>
+	</array>
 	<key>UILaunchImages</key>
 	<array>
 		<dict>

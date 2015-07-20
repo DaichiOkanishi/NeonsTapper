@@ -72,6 +72,7 @@
 		EC82F88B1B5BE7E2001ED34B /* tapNode.png in Resources */ = {isa = PBXBuildFile; fileRef = EC82F88A1B5BE7E2001ED34B /* tapNode.png */; };
 		EC82F88F1B5BF2AA001ED34B /* RyGameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC82F88D1B5BF2AA001ED34B /* RyGameScene.cpp */; };
 		EC82F8921B5BF32A001ED34B /* RyGameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC82F8901B5BF329001ED34B /* RyGameLayer.cpp */; };
+		ECE0509C1B5D4540001D0830 /* circleFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE0509B1B5D4540001D0830 /* circleFrame.png */; };
 		ECE28AF31B5C58C4003D99F0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE28AF21B5C58C4003D99F0 /* AdSupport.framework */; };
 		ECE28AF51B5C58CF003D99F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE28AF41B5C58CF003D99F0 /* CoreGraphics.framework */; };
 		ECE28AF71B5C58EE003D99F0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE28AF61B5C58EE003D99F0 /* MessageUI.framework */; };
@@ -187,6 +188,7 @@
 		EC82F88E1B5BF2AA001ED34B /* RyGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RyGameScene.h; sourceTree = "<group>"; };
 		EC82F8901B5BF329001ED34B /* RyGameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RyGameLayer.cpp; sourceTree = "<group>"; };
 		EC82F8911B5BF329001ED34B /* RyGameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RyGameLayer.h; sourceTree = "<group>"; };
+		ECE0509B1B5D4540001D0830 /* circleFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circleFrame.png; sourceTree = "<group>"; };
 		ECE28AF21B5C58C4003D99F0 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
 		ECE28AF41B5C58CF003D99F0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		ECE28AF61B5C58EE003D99F0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
@@ -355,6 +357,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ECE0509B1B5D4540001D0830 /* circleFrame.png */,
 				EC82F88A1B5BE7E2001ED34B /* tapNode.png */,
 				521A8EA819F11F5000D177D7 /* fonts */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
@@ -572,6 +575,7 @@
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
+				ECE0509C1B5D4540001D0830 /* circleFrame.png in Resources */,
 				46880B8119C43A67006E1F66 /* HelloWorld.png in Resources */,
 				46880B7D19C43A67006E1F66 /* CloseSelected.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
