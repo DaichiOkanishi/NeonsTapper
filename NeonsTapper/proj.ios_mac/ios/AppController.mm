@@ -27,6 +27,7 @@
 #import "cocos2d.h"
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "GADAdSize.h"
 
 @implementation AppController
 
@@ -85,7 +86,30 @@ static AppDelegate s_sharedApplication;
     cocos2d::Director::getInstance()->setOpenGLView(glview);
 
     app->run();
-
+    
+    bannerView_ = [[GADBannerView alloc]initWithAdSize:kGADAdSizeSmartBannerPortrait];
+    
+    // デバッグ中はテスト用の広告を表示する。
+#if defined(COCOS2D_DEBUG) && (COCOS2D_DEBUG > 0)
+    bannerView_.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
+#else
+    bannerView_.adUnitID = @"ca-app-pub-9026980190456931/7054705402";
+#endif
+    
+    [_viewController.view addSubview: bannerView_];
+    bannerView_.rootViewController = self.viewController;
+    [self.viewController.view addSubview: bannerView_];
+    
+    // 一番下に広告を表示
+    bannerView_.center = CGPointMake(
+                                     self.viewController.view.center.x,
+                                     self.viewController.view.frame.size.height - 50
+                                     );
+    
+    GADRequest* request = [GADRequest request];
+    
+    [bannerView_ loadRequest:request];
+    
     return YES;
 }
 
