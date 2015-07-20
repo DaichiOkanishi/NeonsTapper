@@ -103,7 +103,7 @@ static AppDelegate s_sharedApplication;
     // 一番下に広告を表示
     bannerView_.center = CGPointMake(
                                      self.viewController.view.center.x,
-                                     self.viewController.view.frame.size.height - 50
+                                     self.viewController.view.frame.size.height - 50/2
                                      );
     
     GADRequest* request = [GADRequest request];
