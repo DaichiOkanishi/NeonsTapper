@@ -29,7 +29,9 @@ RyGameLayer* RyGameLayer::create()
 RyGameLayer::RyGameLayer()
 : m_elapsedTime(0.0f)
 , m_respawnTime(1.2f)
+, m_scoreLabel(nullptr)
 , m_nodeCount(0)
+, m_score(0)
 {
     m_nodeList.clear();
 }
@@ -52,6 +54,18 @@ bool RyGameLayer::init()
 void RyGameLayer::onEnter()
 {
     this->scheduleUpdate();
+    
+    m_scoreLabel = Label::create();
+    m_scoreLabel->setSystemFontName("fonts/lovelolinelight.ttf");
+    m_scoreLabel->setSystemFontSize(60);
+    m_scoreLabel->setAnchorPoint(Vec2(1.0f, 0.0f));
+    m_scoreLabel->setColor(Color3B(127, 255, 212));
+    m_scoreLabel->setString("0");
+    
+    Size size = Director::getInstance()->getVisibleSize();
+    m_scoreLabel->setPosition(Vec2(size.width - 20, size.height*0.9f));
+    
+    this->addChild(m_scoreLabel);
     
     Layer::onEnter();
 }
@@ -88,5 +102,10 @@ void RyGameLayer::update(float delta)
             continue;
         }
         ++it;
+    }
+    
+    if (CCString* pStr = CCString::createWithFormat("Score : %d", getScore()))
+    {
+        m_scoreLabel->setString(pStr->getCString());
     }
 }

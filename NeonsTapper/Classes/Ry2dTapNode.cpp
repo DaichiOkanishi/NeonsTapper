@@ -245,24 +245,28 @@ void Ry2dTapNode::update(float delta)
             else if(scale >= 1.1f)
             {
                 m_label->setString("300");
+                m_gameLayer->addScore(300);
                 m_imgFrame->setVisible(false);
                 m_status = SUCCESS;
             }
             else if(scale >= 0.9f)
             {
                 m_label->setString("500");
+                m_gameLayer->addScore(500);
                 m_imgFrame->setVisible(false);
                 m_status = SUCCESS;
             }
             else if(scale >= 0.7f)
             {
-                m_label->setString("500");
+                m_label->setString("300");
+                m_gameLayer->addScore(300);
                 m_imgFrame->setVisible(false);
                 m_status = SUCCESS;
             }
             else if(scale >= 0.5f)
             {
                 m_label->setString("100");
+                m_gameLayer->addScore(100);
                 m_imgFrame->setVisible(false);
                 m_status = SUCCESS;
             }

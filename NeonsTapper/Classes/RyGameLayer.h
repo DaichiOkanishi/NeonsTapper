@@ -58,9 +58,10 @@ private:
     float                   m_respawnTime;    // 出現時間
     Vector<Ry2dTapNode *>   m_nodeList;
     
+    Label*                  m_scoreLabel;
 private:
     int                     m_nodeCount;
-    
+    int                     m_score;
     // ----------------------------------------
     // メソッド
     // ----------------------------------------
@@ -69,9 +70,20 @@ public:
     {
         m_nodeCount++;
     }
+    
     inline int getNodeCount()
     {
         return m_nodeCount;
+    }
+    
+    inline void addScore(int score)
+    {
+        m_score += score;
+    }
+    
+    inline int getScore()
+    {
+        return m_score;
     }
 };
 
