@@ -11,6 +11,9 @@
 
 #include <stdio.h>
 #include "ui/CocosGUI.h"
+#include "RyGameLayer.h"
+
+class RyGameLayer;
 
 USING_NS_CC;
 using namespace ui;
@@ -33,6 +36,8 @@ protected:
         TOUCHED,
         LIVED,
         MISSED,
+        SUCCESS,
+        END,
         DEAD
     };
     
@@ -70,13 +75,25 @@ private:
     virtual void update(float delta);
     
     // ----------------------------------------
+    // タッチイベント
+    // ----------------------------------------
+public:
+    bool onTouchBegan(Touch* pTouch, Event* pEvent);
+    void onTouchMoved(Touch* pTouch, Event* pEvent);
+    void onTouchEnded(Touch* pTouch, Event* pEvent);
+    void onTouchCancelled(Touch* pTouch, Event* pEvent);
+
+    void setTouchEvent();
+    // ----------------------------------------
     // プロパティ
     // ----------------------------------------
 private:
-    float       m_elapsedTime;
-    STATUS      m_status;
-    ImageView*  m_imgFrame;
-    Label*      m_label;
+    float                       m_elapsedTime;
+    STATUS                      m_status;
+    ImageView*                  m_imgFrame;
+    Label*                      m_label;
+    EventListenerTouchOneByOne* m_listener;
+    RyGameLayer*                m_gameLayer;
     // ----------------------------------------
     // メソッド
     // ----------------------------------------
@@ -88,6 +105,10 @@ public:
             return false;
         }
         return true;
+    }
+    inline void setGameLayer(RyGameLayer* pLayer)
+    {
+        m_gameLayer = pLayer;
     }
 };
 

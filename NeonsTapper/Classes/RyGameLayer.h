@@ -13,6 +13,10 @@
 #include "cocos2d.h"
 #include "Ry2dTapNode.h"
 
+USING_NS_CC;
+
+class Ry2dTapNode;
+
 class RyGameLayer : public cocos2d::Layer
 {
     // ----------------------------------------
@@ -50,9 +54,25 @@ public:
     // プロパティ
     // ----------------------------------------
 private:
-    float m_elapsedTime;    // 経過時間
-    float m_respawnTime;    // 出現時間
-    Vector<Ry2dTapNode *> m_nodeList;
+    float                   m_elapsedTime;    // 経過時間
+    float                   m_respawnTime;    // 出現時間
+    Vector<Ry2dTapNode *>   m_nodeList;
+    
+private:
+    int                     m_nodeCount;
+    
+    // ----------------------------------------
+    // メソッド
+    // ----------------------------------------
+public:
+    inline void addNodeCount()
+    {
+        m_nodeCount++;
+    }
+    inline int getNodeCount()
+    {
+        return m_nodeCount;
+    }
 };
 
 #endif /* defined(__NeonsTapper__RyGameLayer__) */

@@ -29,6 +29,7 @@ RyGameLayer* RyGameLayer::create()
 RyGameLayer::RyGameLayer()
 : m_elapsedTime(0.0f)
 , m_respawnTime(1.2f)
+, m_nodeCount(0)
 {
     m_nodeList.clear();
 }
@@ -71,6 +72,7 @@ void RyGameLayer::update(float delta)
         if (auto pTapNode = Ry2dTapNode::create())
         {
             pTapNode->initsAll();
+            pTapNode->setGameLayer(this);
             this->addChild(pTapNode);
             m_nodeList.pushBack(pTapNode);
         }
