@@ -104,8 +104,6 @@ void RyGameLayer::update(float delta)
         ++it;
     }
     
-    if (CCString* pStr = CCString::createWithFormat("Score : %d", getScore()))
-    {
-        m_scoreLabel->setString(pStr->getCString());
-    }
+    std::string string = StringUtils::format("Score : %d", getScore());
+    m_scoreLabel->setString(string);
 }

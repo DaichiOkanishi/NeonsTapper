@@ -12,7 +12,11 @@ LOCAL_MODULE_FILENAME := libcocos2dcpp
 
 LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../Classes/AppDelegate.cpp \
-                   ../../Classes/HelloWorldScene.cpp
+                   ../../Classes/RyTitleScene.cpp \
+                   ../../Classes/RyGameScene.cpp \
+                   ../../Classes/RyTitleLayer.cpp \
+                   ../../Classes/RyGameLayer.cpp \
+                   ../../Classes/Ry2dTapNode.cpp \
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 

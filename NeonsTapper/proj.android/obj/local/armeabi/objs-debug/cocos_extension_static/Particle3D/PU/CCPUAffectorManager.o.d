@@ -1,0 +1,344 @@
+obj/local/armeabi/objs-debug/cocos_extension_static/Particle3D/PU/CCPUAffectorManager.o: \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/extensions/Particle3D/PU/CCPUAffectorManager.cpp \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/extensions/Particle3D/PU/CCPUAffectorManager.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./base/CCRef.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./platform/CCPlatformMacros.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./base/ccConfig.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./platform/CCPlatformConfig.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./platform/CCPlatformDefine.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
+ /Users/okanishi/android-ndk-r10b/platforms/android-9/arch-arm/usr/include/android/log.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptTranslator.h \
+ /Users/okanishi/android-ndk-r10b/sources/cxx-stl/gnu-libstdc++/4.8/include/iostream \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/CCMath.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Vec2.h \
+ /Users/okanishi/android-ndk-r10b/sources/cxx-stl/gnu-libstdc++/4.8/include/algorithm \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/CCMathBase.h \
+ /Users/okanishi/android-ndk-r10b/sources/cxx-stl/gnu-libstdc++/4.8/include/memory \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Vec2.inl \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Vec2.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Vec3.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Vec3.inl \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Vec3.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Mat4.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./base/ccMacros.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./base/CCConsole.h \
+ /Users/okanishi/android-ndk-r10b/platforms/android-9/arch-arm/usr/include/sys/select.h \
+ /Users/okanishi/android-ndk-r10b/sources/cxx-stl/gnu-libstdc++/4.8/include/thread \
+ /Users/okanishi/android-ndk-r10b/sources/cxx-stl/gnu-libstdc++/4.8/include/map \
+ /Users/okanishi/android-ndk-r10b/sources/cxx-stl/gnu-libstdc++/4.8/include/mutex \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./platform/CCStdC.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./platform/android/CCStdC-android.h \
+ /Users/okanishi/android-ndk-r10b/sources/cxx-stl/gnu-libstdc++/4.8/include/cassert \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./base/ccRandom.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Vec4.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Vec4.inl \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Mat4.inl \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Vec4.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Mat4.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Quaternion.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Quaternion.inl \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptCompiler.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptParser.h \
+ /Users/okanishi/android-ndk-r10b/sources/cxx-stl/gnu-libstdc++/4.8/include/list \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptLexer.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAffector.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/CCParticle3DAffector.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAlignAffectorTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAlignAffector.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseColliderTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseCollider.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./3d/CCAABB.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffectorTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffector.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxColliderTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxCollider.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseCollider.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCollisionAvoidanceAffectorTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCollisionAvoidanceAffector.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUColorAffectorTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUColorAffector.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./base/ccTypes.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/CCGeometry.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./platform/CCGL.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./platform/android/CCGL-android.h \
+ /Users/okanishi/android-ndk-r10b/platforms/android-9/arch-arm/usr/include/GLES2/gl2platform.h \
+ /Users/okanishi/android-ndk-r10b/platforms/android-9/arch-arm/usr/include/KHR/khrplatform.h \
+ /Users/okanishi/android-ndk-r10b/platforms/android-9/arch-arm/usr/include/GLES2/gl2.h \
+ /Users/okanishi/android-ndk-r10b/platforms/android-9/arch-arm/usr/include/GLES2/gl2ext.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUFlockCenteringAffectorTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUFlockCenteringAffector.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceFieldAffectorTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceFieldAffector.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceField.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUNoise.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGeometryRotatorTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGeometryRotator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUDynamicAttribute.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSimpleSpline.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGravityAffectorTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGravityAffector.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUInterParticleColliderTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUInterParticleCollider.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUJetAffectorTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUJetAffector.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineAffectorTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineAffector.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULinearForceAffectorTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULinearForceAffector.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffector.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleFollowerTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleFollower.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPathFollowerTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPathFollower.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSimpleSpline.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlaneColliderTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlaneCollider.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlane.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURandomiserTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURandomiser.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleAffectorTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleAffector.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleVelocityAffectorTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleVelocityAffector.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSineForceAffectorTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSineForceAffector.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereColliderTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereCollider.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphere.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureAnimatorTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureAnimator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureRotatorTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureRotator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVelocityMatchingAffectorTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVelocityMatchingAffector.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVortexAffectorTranslator.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVortexAffector.h
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/extensions/Particle3D/PU/CCPUAffectorManager.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./base/CCRef.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./platform/CCPlatformMacros.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./base/ccConfig.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./platform/CCPlatformConfig.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./platform/CCPlatformDefine.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
+
+/Users/okanishi/android-ndk-r10b/platforms/android-9/arch-arm/usr/include/android/log.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptTranslator.h:
+
+/Users/okanishi/android-ndk-r10b/sources/cxx-stl/gnu-libstdc++/4.8/include/iostream:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/CCMath.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Vec2.h:
+
+/Users/okanishi/android-ndk-r10b/sources/cxx-stl/gnu-libstdc++/4.8/include/algorithm:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/CCMathBase.h:
+
+/Users/okanishi/android-ndk-r10b/sources/cxx-stl/gnu-libstdc++/4.8/include/memory:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Vec2.inl:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Vec2.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Vec3.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Vec3.inl:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Vec3.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Mat4.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./base/ccMacros.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./base/CCConsole.h:
+
+/Users/okanishi/android-ndk-r10b/platforms/android-9/arch-arm/usr/include/sys/select.h:
+
+/Users/okanishi/android-ndk-r10b/sources/cxx-stl/gnu-libstdc++/4.8/include/thread:
+
+/Users/okanishi/android-ndk-r10b/sources/cxx-stl/gnu-libstdc++/4.8/include/map:
+
+/Users/okanishi/android-ndk-r10b/sources/cxx-stl/gnu-libstdc++/4.8/include/mutex:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./platform/CCStdC.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./platform/android/CCStdC-android.h:
+
+/Users/okanishi/android-ndk-r10b/sources/cxx-stl/gnu-libstdc++/4.8/include/cassert:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./base/ccRandom.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Vec4.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Vec4.inl:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Mat4.inl:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Vec4.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Mat4.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Quaternion.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/Quaternion.inl:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptCompiler.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptParser.h:
+
+/Users/okanishi/android-ndk-r10b/sources/cxx-stl/gnu-libstdc++/4.8/include/list:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptLexer.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAffector.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/CCParticle3DAffector.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAlignAffectorTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAlignAffector.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseColliderTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseCollider.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./3d/CCAABB.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffectorTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffector.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxColliderTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxCollider.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseCollider.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCollisionAvoidanceAffectorTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCollisionAvoidanceAffector.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUColorAffectorTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUColorAffector.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./base/ccTypes.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./math/CCGeometry.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./platform/CCGL.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./platform/android/CCGL-android.h:
+
+/Users/okanishi/android-ndk-r10b/platforms/android-9/arch-arm/usr/include/GLES2/gl2platform.h:
+
+/Users/okanishi/android-ndk-r10b/platforms/android-9/arch-arm/usr/include/KHR/khrplatform.h:
+
+/Users/okanishi/android-ndk-r10b/platforms/android-9/arch-arm/usr/include/GLES2/gl2.h:
+
+/Users/okanishi/android-ndk-r10b/platforms/android-9/arch-arm/usr/include/GLES2/gl2ext.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUFlockCenteringAffectorTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUFlockCenteringAffector.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceFieldAffectorTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceFieldAffector.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceField.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUNoise.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGeometryRotatorTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGeometryRotator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUDynamicAttribute.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSimpleSpline.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGravityAffectorTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGravityAffector.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUInterParticleColliderTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUInterParticleCollider.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUJetAffectorTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUJetAffector.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineAffectorTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineAffector.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULinearForceAffectorTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULinearForceAffector.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffector.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleFollowerTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleFollower.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPathFollowerTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPathFollower.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSimpleSpline.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlaneColliderTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlaneCollider.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlane.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURandomiserTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURandomiser.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleAffectorTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleAffector.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleVelocityAffectorTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleVelocityAffector.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSineForceAffectorTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSineForceAffector.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereColliderTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereCollider.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphere.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureAnimatorTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureAnimator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureRotatorTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureRotator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVelocityMatchingAffectorTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVelocityMatchingAffector.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVortexAffectorTranslator.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVortexAffector.h:
