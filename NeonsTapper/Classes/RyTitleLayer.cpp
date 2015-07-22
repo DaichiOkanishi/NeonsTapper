@@ -78,7 +78,7 @@ void RyTitleLayer::onTouchEnded(Touch *pTouch, Event *pEvent)
 {
     if (Scene* pScene = RyGameScene::createScene())
     {
-        Scene* pTrans = TransitionFade::create(2.0f, pScene, Color3B::BLACK);
+        TransitionFade* pTrans = TransitionFade::create(1.0f, pScene, Color3B::BLACK);
         Director::getInstance()->replaceScene(pTrans);
         
         if (auto dispatcher = Director::getInstance()->getEventDispatcher())

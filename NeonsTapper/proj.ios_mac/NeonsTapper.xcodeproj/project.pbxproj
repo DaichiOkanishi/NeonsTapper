@@ -66,6 +66,7 @@
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
+		EC1CA4561B5F44C900512FBD /* RyGameCountDownLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC1CA4541B5F44C900512FBD /* RyGameCountDownLayer.cpp */; };
 		EC82F8821B5BD2C8001ED34B /* Ry2dTapNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC82F8801B5BD2C8001ED34B /* Ry2dTapNode.cpp */; };
 		EC82F8861B5BE200001ED34B /* RyTitleLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC82F8841B5BE200001ED34B /* RyTitleLayer.cpp */; };
 		EC82F8891B5BE2A5001ED34B /* RyTitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC82F8871B5BE2A5001ED34B /* RyTitleScene.cpp */; };
@@ -177,6 +178,8 @@
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D51AF83419B5D3045895682A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		EC1CA4541B5F44C900512FBD /* RyGameCountDownLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RyGameCountDownLayer.cpp; sourceTree = "<group>"; };
+		EC1CA4551B5F44C900512FBD /* RyGameCountDownLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RyGameCountDownLayer.h; sourceTree = "<group>"; };
 		EC82F8801B5BD2C8001ED34B /* Ry2dTapNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ry2dTapNode.cpp; sourceTree = "<group>"; };
 		EC82F8811B5BD2C8001ED34B /* Ry2dTapNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ry2dTapNode.h; sourceTree = "<group>"; };
 		EC82F8841B5BE200001ED34B /* RyTitleLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RyTitleLayer.cpp; sourceTree = "<group>"; };
@@ -464,6 +467,8 @@
 				EC82F8851B5BE200001ED34B /* RyTitleLayer.h */,
 				EC82F8901B5BF329001ED34B /* RyGameLayer.cpp */,
 				EC82F8911B5BF329001ED34B /* RyGameLayer.h */,
+				EC1CA4541B5F44C900512FBD /* RyGameCountDownLayer.cpp */,
+				EC1CA4551B5F44C900512FBD /* RyGameCountDownLayer.h */,
 			);
 			name = Layer;
 			sourceTree = "<group>";
@@ -653,6 +658,7 @@
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				EC82F8861B5BE200001ED34B /* RyTitleLayer.cpp in Sources */,
+				EC1CA4561B5F44C900512FBD /* RyGameCountDownLayer.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				EC82F8921B5BF32A001ED34B /* RyGameLayer.cpp in Sources */,
 				EC82F88F1B5BF2AA001ED34B /* RyGameScene.cpp in Sources */,

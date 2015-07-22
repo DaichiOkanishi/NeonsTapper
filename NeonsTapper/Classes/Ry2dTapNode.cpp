@@ -111,7 +111,7 @@ void Ry2dTapNode::initColor()
         }
         case 5:
         {
-            color = Color3B::WHITE;
+            color = Color3B::MAGENTA;
             break;
         }
         default:
@@ -227,6 +227,7 @@ void Ry2dTapNode::update(float delta)
                     dispatcher->removeEventListener(m_listener);
                     m_listener = nullptr;
                 }
+                m_gameLayer->addMissCount();
                 m_status = MISSED;
             }
             break;
@@ -240,6 +241,7 @@ void Ry2dTapNode::update(float delta)
             if (scale >= 1.2f)
             {
                 m_label->setString("MISS");
+                m_gameLayer->addMissCount();
                 m_status = MISSED;
             }
             else if(scale >= 1.1f)
@@ -273,6 +275,7 @@ void Ry2dTapNode::update(float delta)
             else
             {
                 m_label->setString("MISS");
+                m_gameLayer->addMissCount();
                 m_status = MISSED;
             }
             break;

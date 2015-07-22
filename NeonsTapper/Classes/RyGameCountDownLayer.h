@@ -1,37 +1,33 @@
 //
-//  RyGameLayer.h
+//  RyGameCountDownLayer.h
 //  NeonsTapper
 //
-//  Created by okanishi on 2015/07/20.
+//  Created by okanishi on 2015/07/22.
 //
 //
 
-#ifndef __NeonsTapper__RyGameLayer__
-#define __NeonsTapper__RyGameLayer__
+#ifndef __NeonsTapper__RyGameCountDownLayer__
+#define __NeonsTapper__RyGameCountDownLayer__
 
 #include <stdio.h>
-#include "cocos2d.h"
-#include "Ry2dTapNode.h"
-
-#include "RyGameCountDownLayer.h"
 
 USING_NS_CC;
 
 class Ry2dTapNode;
 
-class RyGameLayer : public cocos2d::Layer
+class RyGameCountDownLayer : public cocos2d::Layer
 {
     // ----------------------------------------
     // 生成
     // ----------------------------------------
 public:
-    static RyGameLayer* create();
+    static RyGameCountDownLayer* create();
     
 private:
     /// コンストラクタ
-    RyGameLayer();
+    RyGameCountDownLayer();
     /// デストラクタ
-    virtual ~RyGameLayer();
+    virtual ~RyGameCountDownLayer();
     
     // ----------------------------------------
     // ステート
@@ -39,10 +35,11 @@ private:
     enum STATUS
     {
         WAIT = 0,
-        COUNT_DOWN,
-        COUNT_DOWN_WHILE,
-        PLAYING,
-        GAME_OVER
+        THREE,
+        TWO,
+        ONE,
+        ZERO,
+        END
     };
     
     // ----------------------------------------
@@ -69,49 +66,33 @@ public:
     // ----------------------------------------
 private:
     float                   m_elapsedTime;    // 経過時間
-    float                   m_respawnTime;    // 出現時間
-    Vector<Ry2dTapNode *>   m_nodeList;
-    
-    Label*                  m_scoreLabel;
     
 private:
-    int                     m_nodeCount;
-    int                     m_score;
-    int                     m_missCount;
+    Label*                  m_countDownLabel;
+    
 private:
     STATUS                  m_status;
-    
-private:
-    RyGameCountDownLayer*   m_pGameCountDownLayer;
     
     // ----------------------------------------
     // メソッド
     // ----------------------------------------
 public:
-    inline void addNodeCount()
+    inline bool isEnd()
     {
-        m_nodeCount++;
+        if (m_status == END)
+        {
+            return true;
+        }
+        return false;
     }
     
-    inline int getNodeCount()
+    inline void play()
     {
-        return m_nodeCount;
+        this->scheduleUpdate();
+        m_status = THREE;
     }
     
-    inline void addScore(int score)
-    {
-        m_score += score;
-    }
-    
-    inline int getScore()
-    {
-        return m_score;
-    }
-    
-    inline void addMissCount()
-    {
-        m_missCount++;
-    }
+    void CountDownEffect(STATUS state);
 };
 
-#endif /* defined(__NeonsTapper__RyGameLayer__) */
+#endif /* defined(__NeonsTapper__RyGameCountDownLayer__) */
