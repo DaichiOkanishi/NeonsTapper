@@ -408,7 +408,8 @@ obj/local/armeabi/objs-debug/cocos2dcpp_shared/__/__/Classes/RyGameLayer.o: \
  /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/3d/../ui/UIScale9Sprite.h \
  /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/3d/../ui/UIEditBox/UIEditBox.h \
  /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/3d/../ui/UILayoutComponent.h \
- /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/3d/../2d/CCComponent.h
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/3d/../2d/CCComponent.h \
+ jni/../../Classes/RyGameCountDownLayer.h
 
 jni/../../Classes/RyGameLayer.h:
 
@@ -1229,3 +1230,5 @@ jni/../../Classes/Ry2dTapNode.h:
 /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/3d/../ui/UILayoutComponent.h:
 
 /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/3d/../2d/CCComponent.h:
+
+jni/../../Classes/RyGameCountDownLayer.h:

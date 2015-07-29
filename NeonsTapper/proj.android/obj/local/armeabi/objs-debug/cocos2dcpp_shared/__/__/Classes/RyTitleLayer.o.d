@@ -375,7 +375,9 @@ obj/local/armeabi/objs-debug/cocos2dcpp_shared/__/__/Classes/RyTitleLayer.o: \
  /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/3d/../deprecated/CCSet.h \
  /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/3d/../deprecated/CCString.h \
  /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/3d/../deprecated/CCDeprecated.h \
- jni/../../Classes/RyGameScene.h
+ jni/../../Classes/RyGameScene.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/audio/android/../include/SimpleAudioEngine.h \
+ /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/audio/android/../include/Export.h
 
 jni/../../Classes/RyTitleLayer.h:
 
@@ -1130,3 +1132,7 @@ jni/../../Classes/RyTitleLayer.h:
 /Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/3d/../deprecated/CCDeprecated.h:
 
 jni/../../Classes/RyGameScene.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/audio/android/../include/SimpleAudioEngine.h:
+
+/Users/okanishi/Labo/NeonsTapper/NeonsTapper/proj.android/../cocos2d/cocos/audio/android/../include/Export.h:

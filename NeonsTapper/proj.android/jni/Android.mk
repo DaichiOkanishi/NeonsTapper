@@ -10,14 +10,12 @@ LOCAL_MODULE := cocos2dcpp_shared
 
 LOCAL_MODULE_FILENAME := libcocos2dcpp
 
-LOCAL_SRC_FILES := hellocpp/main.cpp \
-                   ../../Classes/AppDelegate.cpp \
-                   ../../Classes/RyTitleScene.cpp \
-                   ../../Classes/RyGameScene.cpp \
-                   ../../Classes/RyTitleLayer.cpp \
-                   ../../Classes/RyGameLayer.cpp \
-                   ../../Classes/Ry2dTapNode.cpp \
-                   ../../Classes/RyGameCountDownLayer.cpp \
+#C++ファイル抽出
+CPP_FILES := $(shell find $(LOCAL_PATH)/../../Classes -name *.cpp)
+CPP_FILES += $(shell find $(LOCAL_PATH)/../../Classes -name *.c)
+
+LOCAL_SRC_FILES := hellocpp/main.cpp
+LOCAL_SRC_FILES += $(CPP_FILES:$(LOCAL_PATH)/%=%)
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 
