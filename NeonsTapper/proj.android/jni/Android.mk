@@ -17,6 +17,7 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../Classes/RyTitleLayer.cpp \
                    ../../Classes/RyGameLayer.cpp \
                    ../../Classes/Ry2dTapNode.cpp \
+                   ../../Classes/RyGameCountDownLayer.cpp \
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 

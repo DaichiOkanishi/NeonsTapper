@@ -10,6 +10,7 @@
 #define __NeonsTapper__RyGameCountDownLayer__
 
 #include <stdio.h>
+#include "cocos2d.h"
 
 USING_NS_CC;
 

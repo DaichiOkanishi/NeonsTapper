@@ -8,6 +8,7 @@
 
 #include "RyTitleLayer.h"
 #include "RyGameScene.h"
+#include "SimpleAudioEngine.h"
 
 RyTitleLayer* RyTitleLayer::create()
 {
@@ -56,6 +57,8 @@ void RyTitleLayer::onEnter()
         pTitleLabel->setColor(Color3B::GREEN);
         this->addChild(pTitleLabel);
     }
+    
+    CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("sound/bgm/title.mp3");
     
     Layer::onEnter();
 }
