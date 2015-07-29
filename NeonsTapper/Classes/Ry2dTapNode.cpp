@@ -7,6 +7,7 @@
 //
 
 #include "Ry2dTapNode.h"
+#include "SimpleAudioEngine.h"
 #include <random>
 
 Ry2dTapNode::Ry2dTapNode()
