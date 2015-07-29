@@ -1,18 +1,18 @@
 //
-//  RyTitleLayer.cpp
+//  RyResultLayer.cpp
 //  NeonsTapper
 //
-//  Created by okanishi on 2015/07/19.
+//  Created by okanishi on 2015/07/29.
 //
 //
 
-#include "RyTitleLayer.h"
-#include "RyGameScene.h"
+#include "RyResultLayer.h"
+#include "RyTitleScene.h"
 #include "SimpleAudioEngine.h"
 
-RyTitleLayer* RyTitleLayer::create()
+RyResultLayer* RyResultLayer::create()
 {
-    RyTitleLayer *ret = new (std::nothrow) RyTitleLayer();
+    RyResultLayer *ret = new (std::nothrow) RyResultLayer();
     if (ret && ret->init())
     {
         ret->autorelease();
@@ -25,7 +25,7 @@ RyTitleLayer* RyTitleLayer::create()
     }
 }
 
-bool RyTitleLayer::init()
+bool RyResultLayer::init()
 {
     if ( Layer::init() == false )
     {
@@ -36,10 +36,10 @@ bool RyTitleLayer::init()
     if (auto listener = EventListenerTouchOneByOne::create())
     {
         listener->setSwallowTouches(true);
-        listener->onTouchBegan		= CC_CALLBACK_2(RyTitleLayer::onTouchBegan, this);
-        listener->onTouchMoved		= CC_CALLBACK_2(RyTitleLayer::onTouchMoved, this);
-        listener->onTouchEnded		= CC_CALLBACK_2(RyTitleLayer::onTouchEnded, this);
-        listener->onTouchCancelled	= CC_CALLBACK_2(RyTitleLayer::onTouchCancelled, this);
+        listener->onTouchBegan		= CC_CALLBACK_2(RyResultLayer::onTouchBegan, this);
+        listener->onTouchMoved		= CC_CALLBACK_2(RyResultLayer::onTouchMoved, this);
+        listener->onTouchEnded		= CC_CALLBACK_2(RyResultLayer::onTouchEnded, this);
+        listener->onTouchCancelled	= CC_CALLBACK_2(RyResultLayer::onTouchCancelled, this);
         
         auto dispatcher = this->getEventDispatcher();
         dispatcher->addEventListenerWithSceneGraphPriority(listener, this);
@@ -48,7 +48,7 @@ bool RyTitleLayer::init()
     return true;
 }
 
-void RyTitleLayer::onEnter()
+void RyResultLayer::onEnter()
 {
     if (auto pTitleLabel = LabelTTF::create("Neons Tapper", "fonts/lovelolinelight.ttf", 60))
     {
@@ -57,29 +57,26 @@ void RyTitleLayer::onEnter()
         pTitleLabel->setColor(Color3B::GREEN);
         this->addChild(pTitleLabel);
     }
-    
-    CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("sound/bgm/title.mp3");
-    
     Layer::onEnter();
 }
 
-void RyTitleLayer::onExit()
+void RyResultLayer::onExit()
 {
     Layer::onExit();
 }
 
-bool RyTitleLayer::onTouchBegan(Touch *pTouch, Event *pEvent)
+bool RyResultLayer::onTouchBegan(Touch *pTouch, Event *pEvent)
 {
     return true;
 }
 
-void RyTitleLayer::onTouchMoved(Touch *pTouch, Event *pEvent)
+void RyResultLayer::onTouchMoved(Touch *pTouch, Event *pEvent)
 {
 }
 
-void RyTitleLayer::onTouchEnded(Touch *pTouch, Event *pEvent)
+void RyResultLayer::onTouchEnded(Touch *pTouch, Event *pEvent)
 {
-    if (Scene* pScene = RyGameScene::createScene())
+    if (Scene* pScene = RyTitleScene::createScene())
     {
         TransitionFade* pTrans = TransitionFade::create(1.0f, pScene, Color3B::BLACK);
         Director::getInstance()->replaceScene(pTrans);
@@ -91,6 +88,6 @@ void RyTitleLayer::onTouchEnded(Touch *pTouch, Event *pEvent)
     }
 }
 
-void RyTitleLayer::onTouchCancelled(Touch *pTouch, Event *pEvent)
+void RyResultLayer::onTouchCancelled(Touch *pTouch, Event *pEvent)
 {
 }

@@ -1,23 +1,23 @@
 //
-//  RyTitleScene.cpp
+//  RyResultScene.cpp
 //  NeonsTapper
 //
-//  Created by okanishi on 2015/07/19.
+//  Created by okanishi on 2015/07/29.
 //
 //
 
-#include "RyTitleScene.h"
-#include "RyTitleLayer.h"
+#include "RyResultScene.h"
+#include "RyResultLayer.h"
 
 USING_NS_CC;
 
-Scene* RyTitleScene::createScene()
+Scene* RyResultScene::createScene()
 {
     // 'scene' is an autorelease object
-    auto scene = RyTitleScene::create();
+    auto scene = RyResultScene::create();
     
     // 'layer' is an autorelease object
-    auto layer = RyTitleLayer::create();
+    auto layer = RyResultLayer::create();
     
     // add layer as a child to scene
     scene->addChild(layer);
@@ -27,7 +27,7 @@ Scene* RyTitleScene::createScene()
 }
 
 // on "init" you need to initialize your instance
-bool RyTitleScene::init()
+bool RyResultScene::init()
 {
     //////////////////////////////
     // 1. super init first

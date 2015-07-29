@@ -67,6 +67,9 @@
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
 		EC0677E41B6118EC0087C550 /* sound in Resources */ = {isa = PBXBuildFile; fileRef = EC0677E31B6118EC0087C550 /* sound */; };
+		EC11372A1B68CD6B00EEF9E3 /* RyResultScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC1137281B68CD6B00EEF9E3 /* RyResultScene.cpp */; };
+		EC11372D1B68CE0C00EEF9E3 /* RyResultLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC11372B1B68CE0C00EEF9E3 /* RyResultLayer.cpp */; };
+		EC1137321B68EBA000EEF9E3 /* tapParticle.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC1137311B68EBA000EEF9E3 /* tapParticle.plist */; };
 		EC1CA4561B5F44C900512FBD /* RyGameCountDownLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC1CA4541B5F44C900512FBD /* RyGameCountDownLayer.cpp */; };
 		EC82F8821B5BD2C8001ED34B /* Ry2dTapNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC82F8801B5BD2C8001ED34B /* Ry2dTapNode.cpp */; };
 		EC82F8861B5BE200001ED34B /* RyTitleLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC82F8841B5BE200001ED34B /* RyTitleLayer.cpp */; };
@@ -180,6 +183,11 @@
 		D51AF83419B5D3045895682A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		EC0677E31B6118EC0087C550 /* sound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sound; sourceTree = "<group>"; };
+		EC1137281B68CD6B00EEF9E3 /* RyResultScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RyResultScene.cpp; sourceTree = "<group>"; };
+		EC1137291B68CD6B00EEF9E3 /* RyResultScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RyResultScene.h; sourceTree = "<group>"; };
+		EC11372B1B68CE0C00EEF9E3 /* RyResultLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RyResultLayer.cpp; sourceTree = "<group>"; };
+		EC11372C1B68CE0C00EEF9E3 /* RyResultLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RyResultLayer.h; sourceTree = "<group>"; };
+		EC1137311B68EBA000EEF9E3 /* tapParticle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = tapParticle.plist; path = ../../../../Downloads/tapParticle.plist; sourceTree = "<group>"; };
 		EC1CA4541B5F44C900512FBD /* RyGameCountDownLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RyGameCountDownLayer.cpp; sourceTree = "<group>"; };
 		EC1CA4551B5F44C900512FBD /* RyGameCountDownLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RyGameCountDownLayer.h; sourceTree = "<group>"; };
 		EC82F8801B5BD2C8001ED34B /* Ry2dTapNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ry2dTapNode.cpp; sourceTree = "<group>"; };
@@ -362,6 +370,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EC1137301B68EB8B00EEF9E3 /* particle */,
 				EC0677E31B6118EC0087C550 /* sound */,
 				ECE0509B1B5D4540001D0830 /* circleFrame.png */,
 				EC82F88A1B5BE7E2001ED34B /* tapNode.png */,
@@ -434,6 +443,14 @@
 			path = ios;
 			sourceTree = SOURCE_ROOT;
 		};
+		EC1137301B68EB8B00EEF9E3 /* particle */ = {
+			isa = PBXGroup;
+			children = (
+				EC1137311B68EBA000EEF9E3 /* tapParticle.plist */,
+			);
+			name = particle;
+			sourceTree = "<group>";
+		};
 		EC82F87D1B5BD167001ED34B /* Scene */ = {
 			isa = PBXGroup;
 			children = (
@@ -441,6 +458,8 @@
 				EC82F8881B5BE2A5001ED34B /* RyTitleScene.h */,
 				EC82F88D1B5BF2AA001ED34B /* RyGameScene.cpp */,
 				EC82F88E1B5BF2AA001ED34B /* RyGameScene.h */,
+				EC1137281B68CD6B00EEF9E3 /* RyResultScene.cpp */,
+				EC1137291B68CD6B00EEF9E3 /* RyResultScene.h */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
@@ -472,6 +491,8 @@
 				EC82F8911B5BF329001ED34B /* RyGameLayer.h */,
 				EC1CA4541B5F44C900512FBD /* RyGameCountDownLayer.cpp */,
 				EC1CA4551B5F44C900512FBD /* RyGameCountDownLayer.h */,
+				EC11372B1B68CE0C00EEF9E3 /* RyResultLayer.cpp */,
+				EC11372C1B68CE0C00EEF9E3 /* RyResultLayer.h */,
 			);
 			name = Layer;
 			sourceTree = "<group>";
@@ -580,6 +601,7 @@
 			files = (
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
+				EC1137321B68EBA000EEF9E3 /* tapParticle.plist in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
@@ -660,6 +682,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC11372A1B68CD6B00EEF9E3 /* RyResultScene.cpp in Sources */,
+				EC11372D1B68CE0C00EEF9E3 /* RyResultLayer.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				EC82F8861B5BE200001ED34B /* RyTitleLayer.cpp in Sources */,
 				EC1CA4561B5F44C900512FBD /* RyGameCountDownLayer.cpp in Sources */,

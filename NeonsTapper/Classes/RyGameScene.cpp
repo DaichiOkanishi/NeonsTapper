@@ -14,7 +14,7 @@ USING_NS_CC;
 Scene* RyGameScene::createScene()
 {
     // 'scene' is an autorelease object
-    auto scene = Scene::create();
+    auto scene = RyGameScene::create();
     
     // 'layer' is an autorelease object
     auto layer = RyGameLayer::create();

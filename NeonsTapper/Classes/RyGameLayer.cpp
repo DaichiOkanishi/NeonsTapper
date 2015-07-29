@@ -7,6 +7,7 @@
 //
 
 #include "RyGameLayer.h"
+#include "RyResultScene.h"
 #include "Ry2dTapNode.h"
 
 USING_NS_CC;
@@ -155,7 +156,16 @@ void RyGameLayer::update(float delta)
         
         case GAME_OVER:
         {
-            this->setColor(Color3B::BLACK);
+            if (Scene* pScene = RyResultScene::createScene())
+            {
+                TransitionFade* pTrans = TransitionFade::create(1.0f, pScene, Color3B::BLACK);
+                Director::getInstance()->replaceScene(pTrans);
+                
+                if (auto dispatcher = Director::getInstance()->getEventDispatcher())
+                {
+                    dispatcher->removeAllEventListeners();
+                }
+            }
             break;
         }
             
